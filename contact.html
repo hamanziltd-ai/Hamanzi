@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HAMANZI WORLDLINK AGENCY</title>
+    <link rel="stylesheet" href="style.css">
+     <script>
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // Disable right-click
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "u" || e.key === "U" || e.key === "s" || e.key === "S")) {
+      e.preventDefault(); // Prevent Ctrl+U (View Source) and Ctrl+S (Save)
+    }
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+      e.preventDefault(); // Prevent F12 (DevTools) and Ctrl+Shift+I
+    }
+  });
+</script>
+
+</head>
+<body>
+
+   <!-- Header Section -->
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/log10.png" width="225px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <div class="phone-number">
+                  <a href="tel:+254123456789">Call Us: +254 123 456 789</a>
+              </div>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+       </div>
+   </div>
+
+   <!-- Contact Section -->
+   <div class="contact">
+       <div class="small-container">
+           <h2 class="title">Contact Us</h2>
+
+           <!-- Contact Info -->
+           <div class="contact-info">
+               <div class="address">
+                   <h3>Our Address</h3>
+                   <p>Maximum Business Centre, Tsavo Road  Nairobi Town, Kenya</p>
+               </div>
+               <div class="email">
+                   <h3>Email Us</h3>
+                   <p>hamanziltd@gmail.com</p>
+               </div>
+               <div class="phone">
+                   <h3>Call Us</h3>
+                   <p><a href="tel:+254722943232">+254 22 943232</a></p>
+               </div>
+           </div>
+
+           <!-- Contact Form -->
+           <form action="">
+               <input type="text" placeholder="Your Name" required>
+               <input type="email" placeholder="Your Email" required>
+               <textarea placeholder="Your Message" required></textarea>
+               <button type="submit" class="btn">Send Message</button>
+           </form>
+       </div>
+   </div>
+
+   <!-- Google Map Section -->
+   <div class="map-container">
+       <h3>Find Us Here</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.81856215493!2d36.822730173479066!3d-1.282677935619073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11c3be5bdacd%3A0xa22516c629f229e8!2sHamanzi%20Worldlink%20Agency!5e0!3m2!1sen!2ske!4v1755767261362!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <!-- Footer Section -->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col2">
+                   <img src="images/log10.png">
+                   <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Modern Technology Accessible to the Many.</p>
+               </div>
+               <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                   <ul>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li>
+                   </ul>
+               </div>
+               <div class="footer-col4">
+                   <h3>Follow Us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Instagram</li>
+                       <li>YouTube</li>
+                   </ul>
+               </div>
+           </div>
+           <hr>
+           <p class="copyright"><a href="https://hamanzi-worldlink-agency-ltd.business.site/">Copyright 2025 - Hamanzi Worldlink Agency</a></p>
+       </div>
+   </div>
+
+   <!-- JavaScript for Toggle Menu -->
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle() {
+           if (MenuItems.style.maxHeight == "0px") {
+               MenuItems.style.maxHeight = "200px";
+           } else {
+               MenuItems.style.maxHeight = "0px";
+           }
+       }
+   </script>
+
+</body>
+</html>

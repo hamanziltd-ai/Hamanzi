@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HAMANZI WORLDLINK AGENCY</title>
+    <link rel="stylesheet" href="style.css">
+     <script>
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // Disable right-click
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && (e.key === "u" || e.key === "U" || e.key === "s" || e.key === "S")) {
+      e.preventDefault(); // Prevent Ctrl+U (View Source) and Ctrl+S (Save)
+    }
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+      e.preventDefault(); // Prevent F12 (DevTools) and Ctrl+Shift+I
+    }
+  });
+</script>
+
+</head>
+<body>
+
+   <!-- Header Section -->
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/log10.png" width="225px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <div class="phone-number">
+                  <a href="tel:+254123456789">Call Us: +254 72294 3232</a>
+              </div>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+       </div>
+   </div>
+
+   <!-- About Us Section -->
+   <div class="about-us">
+       <div class="container">
+           <div class="about-header">
+               <h2>About Us</h2>
+               <p>Learn more about our mission, vision, and values.</p>
+           </div>
+           <div class="about-content">
+               <div class="text-section">
+                   <h3>Welcome to Hamanzi Worldlink Agency</h3>
+                   <p>We are a premier provider of office supplies, including printers, toners, and other essential office equipment, based in Nairobi, Kenya. We aim to deliver cutting-edge solutions to businesses and individuals, making technology more accessible.</p>
+                   
+                   <h3>Our Vision</h3>
+                   <p>Our aim is to develop and maintain mutually beneficial relationships with both our clients
+and suppliers, to maintain service excellence and the continued improvement thereof..</p>
+                   
+                   <h3>Our Mission</h3>
+                   <p>To provide top-quality, cost-effective office solutions, while ensuring sustainability and maximizing customer satisfaction through innovation and dedicated service.</p>
+                   
+                   <h3>Our Values</h3>
+                   <ul>
+                       <li>Quality</li>
+                       <li>Customer Satisfaction</li>
+                       <li>Innovation</li>
+                       <li>Integrity</li>
+                       <li>Social Responsibility</li>
+                   </ul>
+               </div>
+               <div class="image-section">
+                   <img src="images/hamanzi.png" alt="Our Team">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               
+               <div class="footer-col2">
+                   <img src="images/log10.png">
+                   <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Modern Technology Accessible to the Many.</p>
+               </div>
+               <div class="footer-col3">
+                   <h3>Useful Links</h3>
+                   <ul>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li>
+                   </ul>
+               </div>
+               <div class="footer-col4">
+                   <h3>Follow Us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Instagram</li>
+                       <li>YouTube</li>
+                   </ul>
+               </div>
+           </div>
+           <hr>
+           <p class="copyright"><a href="https://hamanzi-worldlink-agency-ltd.business.site/">Copyright 2025 - Hamanzi Worldlink Agency</a></p>
+       </div>
+   </div>
+
+   <!-- JavaScript for Toggle Menu -->
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle() {
+           if (MenuItems.style.maxHeight == "0px") {
+               MenuItems.style.maxHeight = "200px";
+           } else {
+               MenuItems.style.maxHeight = "0px";
+           }
+       }
+   </script>
+
+</body>
+</html>
